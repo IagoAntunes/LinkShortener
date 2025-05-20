@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_title_shortened_link"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.sans.MD"
+        android:textColor="@color/blue_base"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        tools:text="brev.ly/Portfolio" />
+
+    <TextView
+        android:id="@+id/tv_subtitle_shortened_link"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.sans.SM"
+        android:textColor="@color/gray_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_shortened_link"
+        app:layout_constraintWidth_percent="0.4"
+        tools:text="devsite.portfolio.com.br/" />
+
+    <TextView
+        android:id="@+id/tv_access_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.sans.SM"
+        android:textColor="@color/gray_500"
+        app:layout_constraintBottom_toBottomOf="@id/tv_subtitle_shortened_link"
+        app:layout_constraintStart_toEndOf="@id/tv_title_shortened_link"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="30 acessos" />
+
+    <LinearLayout
+        android:id="@+id/ll_link_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_copy_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_icon_button"
+            android:contentDescription="Copy"
+            android:padding="8dp"
+            android:src="@drawable/ic_copy"
+            app:layout_constraintEnd_toStartOf="@id/btn_delete_link"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/btn_delete_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_icon_button"
+            android:contentDescription="Copy"
+            android:padding="8dp"
+            android:src="@drawable/ic_delete_outline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

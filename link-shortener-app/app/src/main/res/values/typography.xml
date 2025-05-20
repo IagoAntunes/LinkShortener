@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.sans.XL" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.sans.LG" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.sans.MD" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+
+    <style name="TextAppearance.sans.SM" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+
+    <style name="TextAppearance.sans.XS" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+</resources>
